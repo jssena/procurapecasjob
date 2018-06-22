@@ -1,0 +1,22 @@
+<div id="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="list-footer col-xs-12 col-md-4 col-xl-4">
+                    <img src="/assets/images/cadastre-se.png" alt="cadastre-se">
+                </div>
+                <div class="list-footer col-xs-12 col-md-8 col-xl-8">
+                    <form [formGroup]="newsletterForm" (submit)="signupNewsLetter($event)" class="form form-inline">
+                        <fieldset>
+                            <div class="form-group box-name" [ngClass]="{'has-error': hasError('name')}">
+                                <input type="text" name="name" [(ngModel)]="newsletter.name" class="form-control form-input" placeholder="Nome" formControlName="name" required>
+                            </div>
+                            <div class="form-group box-email" [ngClass]="{'has-error': hasError('email')}">
+                                <input type="email" name="email" [(ngModel)]="newsletter.email" class="form-control form-input" placeholder="E-mail" formControlName="email" required>
+                            </div>
+                            <button type="submit" id="btn-newsletter" class="btn btn-default btn-newsletter">ENVIAR</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,40 @@
+{
+    "domain": "atri",
+    "logo": "Logo-a46692f5-d873-450b-b23d-7d2ecdb8dcb8.png",
+    "link": "https://atri.idealeware.com.br",
+    "companyName": "Idealeware",
+    "tradingName": "Idealeware Soluções em Sistemas LTDA - EPP",
+    "cnpj": "06.205.268/0001-46",
+    "stateRegistration": "002210011001",
+    "responsible": "Fernando Mansano",
+    "phone": "(16) 3916-2135",
+    "cellPhone": "(16) 99733-1666",
+    "email": "suporte@idealeware.com.br",
+    "zipCode": "14096-075",
+    "addressLine1": "Avenida Maurilio Biagi, 800",
+    "addressLine2": "10º andar",
+    "district": "Santa Cruz",
+    "city": "Ribeirão Preto",
+    "state": "SP",
+    "country": "Brasil",
+    "modality": 1,
+    "createdDate": "2017-09-04T14:18:53.847",
+    "settings": [
+      {
+        "id": "617294c4-c401-11e7-8a54-fb786b2bb5fa",
+        "title": "Esconder as variações na loja",
+        "description": "Deseja esconder as variações dos produtos na loja ?",
+        "status": false,
+        "type": 4
+      },
+      {
+        "id": "7b17a111-d9df-11e7-9b88-091992bbef39",
+        "title": "Mostrar estoque dos produtos",
+        "description": "Deseja mostrar a quantidade em estoque dos produtos?",
+        "status": false,
+        "type": 5
+      }
+    ],
+    "imageFivIcon": [],
+    "logoMobile": null
+  }

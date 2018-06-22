@@ -1,0 +1,74 @@
+
+#avaliations .star .fa {
+  line-height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+#avaliations .star .fa-star, #avaliations .star .fa-star-half-o {
+  color: #F6C523;
+}
+
+#avaliations .star .fa-star-o {
+  color: #D9D9D9;
+}
+
+#avaliations .avaliations-list .rating-box .rating-stars .qty {
+  font-size: 14px;
+  color: #999999;
+  line-height: 40px;
+}
+
+#avaliations .avaliations-list .rating-box #rating-order {
+  margin-left: 20px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  font-size: 13px;
+  color: $link-primary-color;
+  font-weight: 400;
+  height: 40px;
+}
+
+#avaliations .avaliations-list .avaliations {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#avaliations .avaliations-list .avaliations .avaliations-item {
+  border-bottom: 1px solid #D9D9D9;
+  padding: 20px 0;
+  display: block;
+}
+
+
+
+#avaliations .avaliations-list .avaliations .avaliations-item .rating {
+  padding: 5px 0;
+  display: block;
+}
+
+#avaliations .avaliations-list .avaliations .avaliations-item .rating .star .fa {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+#avaliations .avaliations-list .avaliations .avaliations-item .text {
+  font-size: 16px;
+  color: $link-primary-color;
+  line-height: 19px;
+  font-weight: 400;
+  padding: 5px 0;
+  display: block;
+}
+
+#avaliations .avaliations-list .avaliations .avaliations-item .author {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 400;
+  line-height: 19px;
+  display: block;
+  padding: 5px 0;
+}

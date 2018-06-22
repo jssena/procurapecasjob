@@ -1,0 +1,161 @@
+
+
+.showcase {
+  margin-top: 0px;
+
+}
+
+
+.showcase .title {
+  margin: 0 0 30px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.category-grid .title b,
+.showcase .title b{
+  color: #283235;
+}
+.category-grid .title,
+.showcase .title{
+  color: #283235; font-size: 3em;
+  font-weight: bold;
+}
+
+.showcase.showcase-owl .showcase-items {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.showcase.showcase-owl .showcase-items li {
+  padding: 20px 5px;
+}
+.showcase-item{
+ 
+}
+.showcase .showcase-items {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.showcase-catalog .showcase-items > li {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 0;
+  padding: 20px 15px;
+}
+@media (min-width: 992px) {
+
+  /* .showcase .showcase-items > li {
+    width: 33%;
+  } */
+}
+
+
+.showcase.showcase-buy-together .showcase-items > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-item {
+  max-width: 190px;
+  padding: 5px;
+}
+@media (min-width: 992px) {
+
+  .showcase.showcase-buy-together .showcase-items .showcase-item {
+    max-width: 260px;
+    padding: 10px 20px;
+  }
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-item .border {
+  padding: 15px;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-plus,
+.showcase.showcase-buy-together .showcase-items .showcase-equals {
+  font-size: 30px;
+  color: $link-primary-color;
+  line-height: 35px;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total > span {
+  display: block;
+  font-size: 15px;
+  color: #999999;
+  line-height: 18px;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .price-box {
+  padding: 10px 0;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .price-box em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .price-box .old-price {
+  display: block;
+  font-size: 15px;
+  color: #999999;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .price-box .regular-price {
+  display: block;
+  font-size: 30px;
+  color: #000000;
+  line-height: 39px;
+  font-weight: 500;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .parcelamento {
+  font-size: 15px;
+  color: $link-primary-color;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.showcase.showcase-buy-together .showcase-items .showcase-total .btn-buy-together {
+  margin-top: 15px;
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+.showcase-catalog {
+  margin-top: 0;
+}
+
+.showcase-produtos-bn{ 
+  padding: 30px;
+  .row{
+    margin-top: 0;
+  }
+}
+.bn-produtos{
+  width: 100%;
+}
+.bg-section{
+  width: 100%;
+  min-height: 500px;
+  background: #eae9e9;
+}
+.title-new  {
+  
+    color: $blue;
+    padding-bottom: 10px;
+    border-bottom:2px solid $blue;
+    font-size: 40px;
+}
+.title-new span{
+   @extend %bold;
+   text-transform: uppercase;
+   font-size: 50px;
+  padding-right: 10px;
+}

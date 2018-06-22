@@ -1,0 +1,76 @@
+<div id="big-sale" class="pull-left col-6 banner-selector" style="width: 100%;" >
+    <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <!-- <h4 class="banner-title">Encontre a sua<br>peça original</h4> -->
+            <img src="/assets/images/imgs/encontre-title.png" alt="Encontre a sua peça original" class=" title"  />
+            
+        </div>
+        <div class="col-md-8">
+            <ul>
+                 
+                <li *ngIf="vehiclesBrand.length > 0" class="form-list-line col-md-4">
+                    <!-- <p class="banner-list-number" style="display: inline">1</p> -->
+                    <select  class="form-control banner-select" [(ngModel)]="brandId" name="brandId" (change)="getVehicle($event)"  style="display: inline">
+                            <option [selected]="true == true" [ngValue]="null" >Marcas</option>
+                            <option *ngFor="let brand of vehiclesBrand" [ngValue]="brand.id">{{brand.fipe_name}}</option>
+                    </select>
+                </li>
+                <li *ngIf="vehicles.length > 0" class="form-list-line col-md-4">
+                 <!-- <p class="banner-list-number" style="display: inline">2</p>    --> 
+                    <select class="form-control banner-select" [(ngModel)]="vehicleId" name="vehicleId" (change)="getVehicleYear($event)"  style="display: inline">
+                            <option [selected]="true == true" [ngValue]="null">Veículo</option>
+                            <option *ngFor="let vehicle of vehicles" [ngValue]="vehicle.id" >{{vehicle.fipe_name}}</option>
+                    </select>
+                </li> 
+                <li *ngIf="vehicles.length < 1" class="form-list-line col-md-4">
+                   <!--  <p class="banner-list-number" style="display: inline">2</p> -->
+                    <select class="form-control banner-select"  disabled="disabled"  style="display: inline">
+                            <option>Veículo</option>
+                    </select>
+                </li>
+                <li *ngIf="vehiclesYear.length > 0" class="form-list-line  col-md-4">
+                    <!-- <p class="banner-list-number" style="display: inline">4</p> -->
+                        <select class="form-control banner-select" [(ngModel)]="vehicleYear" name="vehicleYear"  style="display: inline">
+                                <option [selected]="true == true" [ngValue]="null">Ano</option>
+                                <option *ngFor="let vehicle of vehiclesYear" [ngValue]="vehicle.name">{{vehicle.name}}</option>
+                        </select>
+                </li> 
+                <li  *ngIf="vehiclesYear.length < 1" class="form-list-line col-md-4"   >
+                    <!-- <p class="banner-list-number" style="display: inline">3</p> -->
+                            <select class="form-control banner-select" disabled="disabled"  style="display: inline">
+                                    <option>Ano</option>
+                            </select>
+                </li> 
+               
+            </ul>
+        </div>
+        <div class="col-md-2">
+                <form id="form-searchVehicle" action="/buscar" method="get" (submit)="searchFor($event)">
+                    <!-- <div name="q" [(ngModel)]="q"> -->
+                        <button class="banner-submit" type="submit">Pesquisa</button>
+                    <!-- </div> -->
+                </form>
+        </div>
+    </div>
+    </div>  
+       <!-- <div class="col-xs-12 col-md-12">
+            <form id="form-searchVehicle" action="/buscar" method="get" (submit)="searchFor($event)">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="O que você procura?" name="q" [(ngModel)]="q" autocomplete="off">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="javascript:void(0)" class="" title="Buscar">
+            <div class="col-xs-12 col-md-6">
+                <i class="fa fa-car fa-2x pull-left"></i>
+                <span class="name-sale pull-left" style="font-size:22px;">Buscar</span>
+            </div>
+        </a>-->
+        <div class="clearfix"></div>
+
+</div>

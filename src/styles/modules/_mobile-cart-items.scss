@@ -1,0 +1,116 @@
+
+
+.mobile-cart-items{
+  padding: 10px 15px;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.mobile-cart-items .mobile-cart-item{
+  border-top: 1px solid #D9D9D9;
+  padding: 10px 0;
+}
+
+.mobile-cart-items .mobile-cart-item:first-child {
+  border-top: 0 none;
+}
+
+.mobile-cart-items .mobile-cart-item .actions {
+  margin-left: 10px;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .btn-remove {
+  border: 0 none;
+  background: transparent;
+  display: block;
+  width: 45px;
+  height: 25px;
+  margin-bottom: 5px;
+  color: $link-primary-color;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .btn-remove:hover {
+  color: #D0011B;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty {
+  display: block;
+  position: relative;
+  max-width: 45px;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty input {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  font-size: 12px;
+  color: $link-primary-color;
+  height: 25px;
+  width: 45px;
+  text-align: center;
+  padding: 0 0px;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty .btn-update {
+  border: 0 none;
+  background-color: transparent;
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 400;
+  padding: 0;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty .btn-update.btn-update-del {
+  left: 0;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty .btn-update.btn-update-add {
+  right: 0;
+}
+
+.mobile-cart-items .mobile-cart-item .actions .update-qty .btn-update:hover {
+  color: $btn-success-background-color;
+}
+
+.mobile-cart-items .mobile-cart-item .thumb {
+  padding-right: 10px;
+}
+
+.mobile-cart-items .mobile-cart-item .details a {
+  text-decoration: none;
+}
+
+.mobile-cart-items .mobile-cart-item .details a b {
+  font-size: 12px;
+  color: $link-primary-color;
+  line-height: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.mobile-cart-items .mobile-cart-item .details a strong {
+  display: block;
+}
+
+.mobile-cart-items .mobile-cart-item .details a strong .old-price {
+  font-size: 11px;
+  color: #999999;
+  line-height: 15px;
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.mobile-cart-items .mobile-cart-item .details a strong .regular-price {
+  font-size: 13px;
+  color: #000000;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: top;
+}

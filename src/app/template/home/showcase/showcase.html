@@ -1,0 +1,95 @@
+<!-- Parte principal do site -->
+<main role="main" *ngIf="showcase">
+   <!-- <app-showcase-banner-stripe [store]="getStore()" [banners]="stripeBanners"></app-showcase-banner-stripe> -->
+    <app-showcase-banner [store]="getStore()" [banners]="banners"></app-showcase-banner>
+    <app-brand-nav [store]="getStore()"></app-brand-nav>
+
+    <!-- <div class="container-fluid" style="max-width: 1460px">
+        <app-category-grid [store]="getStore()"></app-category-grid>
+    </div> -->
+    <div class="bg-section">    
+        <div class="container  showcase-produtos-bn " *ngIf="showcase.groups[0]" >
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="/assets/images/imgs/auto-pecas-banner.jpg" alt="Auto Peças" class="bn-produtos">
+                </div>
+                <div class="col-md-offset-1 col-lg-offset-1 col-lg-8 col-md-8 slides-3" >
+                    <app-showcase-group [store]="getStore()" [group]="showcase.groups[0]"></app-showcase-group>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  showcase-produtos-bn slides-4" *ngIf="showcase.groups[1]"  >
+        <h3 class="title title-new"><span>Ofertas Peças</span> Selecionamos nossas melhores ofertas</h3>
+        <app-showcase-group [store]="getStore()" [group]="showcase.groups[1]"></app-showcase-group>
+    </div>
+
+    <div class="bg-section">    
+        <div class="container  showcase-produtos-bn " *ngIf="showcase.groups[2]" >
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="/assets/images/imgs/eletrica-banner.jpg" alt="Elétrica" class="bn-produtos">
+                </div>
+                <div class="col-md-offset-1 col-lg-offset-1 col-lg-8 col-md-8 slides-3" >
+                    <app-showcase-group [store]="getStore()" [group]="showcase.groups[2]"></app-showcase-group>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-section">    
+        <div class="container  showcase-produtos-bn " *ngIf="showcase.groups[3]" style="margin-top: 25px">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="/assets/images/imgs/lubrificantes-e-aditivos-banner.jpg" alt="lubrificantes e aditivos" class="bn-produtos">
+                </div>
+                <div class="col-md-offset-1 col-lg-offset-1 col-lg-8 col-md-8 slides-3" >
+                    <app-showcase-group [store]="getStore()" [group]="showcase.groups[3]"></app-showcase-group>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="container  showcase-produtos-bn slides-4" *ngIf="showcase.groups[4]"  >
+        <h3 class="title title-new"><span>Ofertas Acessórios</span> Selecionamos nossas melhores ofertas</h3>
+        <app-showcase-group [store]="getStore()" [group]="showcase.groups[4]"></app-showcase-group>
+    </div>
+    <div class="bg-section">    
+        <div class="container  showcase-produtos-bn " *ngIf="showcase.groups[5]" >
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <img src="/assets/images/imgs/acessorioss-banner.jpg" alt="acessórios" class="bn-produtos">
+                </div>
+                <div class="col-md-offset-1 col-lg-offset-1 col-lg-8 col-md-8 slides-3" >
+                    <app-showcase-group [store]="getStore()" [group]="showcase.groups[5]"></app-showcase-group>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+   <!--  <app-showcase-banner-half [store]="getStore()" [banners]="halfBanners"  *ngIf="showcase.groups[1]"></app-showcase-banner-half> -->
+
+    <!-- <div class="container-fluid showcase-produtos-bn novidades" *ngIf="showcase.groups[2]">
+        <div class="container" style="max-width: 1400px">
+            <app-showcase-group [store]="getStore()" [group]="showcase.groups[2]"></app-showcase-group>
+        </div>
+    </div>
+
+    <div class="bg-section">    
+        <div class="container-fluid showcase-produtos-bn " *ngIf="showcase.groups[3]" style="max-width: 1400px;">
+            <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <img src="/assets/images/imgs/acessorios-banner.jpg" alt="Auto Peças" class="bn-produtos">
+            </div>
+            <app-showcase-group [store]="getStore()" [group]="showcase.groups[3]"></app-showcase-group>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div *ngIf="showcase.groups[0]">
+            <app-newsletter></app-newsletter>
+    </div>
+</main>

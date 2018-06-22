@@ -1,0 +1,106 @@
+
+#main-footer {
+  background: $footer-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+
+  img{
+    width: 365px;
+    max-width: 100%;
+    
+  }
+  .cartoes{
+    max-width: 100%;
+
+  }
+}
+
+@media (min-width: 768px) {
+  #main-footer{
+    padding: 30px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-footer{
+    padding: 30px 20px;
+  }
+}
+
+#main-footer .list-footer .title {
+  margin: 0;
+  font-size: 16px;
+  color: $background-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+#main-footer .list-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#main-footer .list-footer ul li {
+  display: block;
+  padding-bottom: 5px;
+}
+
+#main-footer .list-footer ul li a, #main-footer .list-footer ul li span {
+  font-size: 14px;
+  color: $background-color;
+}
+
+
+#main-footer .list-footer ul li a:hover, #main-footer .list-footer ul li span:hover {
+  color: #777474;
+}
+
+#main-footer .footer-call-center li .phone {
+  font-size: 14px !important;
+  color: $background-color !important;
+}
+
+#main-footer .light-box {
+  margin-bottom: 7px;
+}
+
+#main-footer .footer-social-networks ul {
+  text-align: center;
+}
+
+#main-footer .footer-social-networks ul li a {
+  font-size: 18px;
+  color: #FFF;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 32px;
+  transition: all 0.3s linear 0.1s;
+}
+
+#main-footer .footer-social-networks ul li a:hover {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  margin: -5px;
+  line-height: 37px;
+}
+
+#main-footer .footer-social-networks ul li.footer-twitter a {
+  background: #44D5FF;
+}
+
+#main-footer .footer-social-networks ul li.footer-youtube a {
+  background: #E41919;
+}
+
+#main-footer .footer-social-networks ul li.footer-instagram a {
+  background: #fff;
+}
+
+#main-footer .footer-social-networks ul li.footer-pinterest a {
+  background: #F33333;
+}

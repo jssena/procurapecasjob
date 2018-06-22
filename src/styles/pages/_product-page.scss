@@ -1,0 +1,216 @@
+
+
+.product-page .title {
+  margin: 0 0 30px;
+  border-top: 2px solid #666665;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.product-page .title b {
+  @extend %bold;
+  color: $blue;//$link-primary-color;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 0px solid $link-primary-color;
+  padding-bottom: 6px;
+}
+
+.product-page .col-details .product-price-box {
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+
+  .product-page .col-details .product-price-box {
+    padding-right: 0;
+    float: none;
+  }
+}
+
+.product-page .col-details .product-buy-content {
+  //max-width: 210px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+
+  .product-page .col-details .product-buy-content {
+    text-align: left;
+    max-width: 100%;
+    float: none;
+  }
+}
+
+.product-page .col-details .product-buy-content .product-buy-qty,
+.product-page .col-details .product-buy-content .product-buy-button {
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.product-page .col-details .product-buy-content .product-buy-button .btn {
+  display: block;
+  width: 100%;
+}
+
+.product-page .col-details .shipping-box {
+  background: #F3F3F3;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.product-page .col-details .shipping-box form {
+  display: block;
+  margin: 0 -10px;
+}
+
+.product-page .col-details .shipping-box label {
+  display: block;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 18px;
+}
+
+.product-page .col-details .shipping-box label .fa {
+  color: $link-primary-color;
+  font-size: 22px;
+  line-height: 18px;
+  margin-right: 10px;
+}
+@media (min-width: 992px) {
+
+  .product-page .col-details .shipping-box label {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 210px;
+    margin: 0;
+  }
+
+  .product-page .col-details .shipping-box label .fa {
+    line-height: 36px;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+
+  .product-page .col-details .shipping-box label {
+    max-width: 230px;
+  }
+}
+
+.product-page .col-details .shipping-box .input-box {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+
+  .product-page .col-details .shipping-box .input-box {
+    max-width: 140px;
+  }
+}
+@media (min-width: 1200px) {
+
+  .product-page .col-details .shipping-box .input-box {
+    max-width: 280px;
+  }
+}
+
+.product-page .col-details .shipping-box .input-box input {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  font-size: 14px;
+  color: #999999;
+  height: 48px;
+  padding: 0 55px 0 10px;
+  width: 100%;
+  transition: 300ms all;
+}
+
+.product-page .col-details .shipping-box .input-box input:focus {
+  border-color: silver;
+}
+
+.product-page .col-details .shipping-box .input-box button {
+  border: 0 none;
+  border-left: 1px solid #D9D9D9;
+  border-radius: 0;
+  background: transparent;
+  font-size: 14px;
+  color: $link-primary-color;
+  letter-spacing: 0;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  height: 35px;
+  width: 40px;
+  padding: 0;
+}
+
+.product-page .col-details .shipping-box .input-box button:hover {
+  color: $link-hover-primary-color;
+}
+
+.product-page .col-details .shipping-box a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #999999;
+  line-height: 15px;
+  text-decoration: underline;
+}
+@media (min-width: 992px) {
+
+  .product-page .col-details .shipping-box a {
+    max-width: 85px;
+  }
+}
+
+.product-page .col-details .shipping-box a:hover {
+  color: gray;
+}
+
+.product-page .product-extra {
+  border-top: 1px solid #D9D9D9;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.product-page .product-extra .description,
+.product-page .product-extra .specifications {
+  padding: 10px 0;
+}
+
+.product-page .product-extra .description .description-text {
+  font-size: 16px;
+  color: $link-primary-color;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.product-page .product-extra .specifications table td {
+  border: 1px solid #D9D9D9;
+  font-size: 14px;
+  color: $link-primary-color;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.product-page .product-extra .specifications table .field {
+  background: #F3F3F3;
+  width: 30%;
+}
+
+.product-page .product-extra #avaliations .avaliations-list .avaliations .avaliations-item .title {
+  display: block;
+  font-size: 18px;
+  color: $link-primary-color;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 0;
+  border: 0 none;
+  padding: 5px 0;
+}

@@ -1,0 +1,12 @@
+<div id="banner-tarja" *ngIf="banners.length > 0">
+    <div class="container">
+        <ul>
+            <li *ngFor="let banner of banners" >
+                <a *ngIf="banner.url" [attr.href]="banner.url" target="_blank">
+                    <img [attr.src]="getBannerUrl(banner)" [attr.alt]="banner.name" class="img-responsive center-block">
+                </a>
+                <img *ngIf="!banner.url" [attr.src]="getBannerUrl(banner)" [attr.alt]="banner.name" class="img-responsive center-block">
+            </li>
+        </ul>
+    </div>
+</div>

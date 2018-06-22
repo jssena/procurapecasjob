@@ -1,0 +1,46 @@
+
+body {
+ // font-family: 'Roboto', sans-serif;
+ font-family: 'ConduitITCLight';
+}
+//@extend
+%bold{
+  font-family: 'ConduitITC-Bold';
+}
+.font-bold{
+  font-family: 'ConduitITC-Bold';
+}
+#layout{
+  padding-bottom: 10px;
+}
+.clear{
+  clear:both;
+}
+a, button, input[type="button"], input[type="submit"] {
+  transition: 300ms all;
+}
+
+
+a {
+  color: $link-primary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-primary-color;
+  text-decoration: none;
+}
+
+
+input:focus, button:focus {
+  outline: none;
+}
+
+
+@media (min-width: 992px) {
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+

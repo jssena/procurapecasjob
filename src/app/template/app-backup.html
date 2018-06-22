@@ -1,0 +1,239 @@
+<!-- Header Checkout -->
+<header id="header-checkout" [ngClass]="{'hide': !isCheckout()}" *ngIf="getStore()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="brand overflow-hidden text-center">
+                <a [routerLink]="['/']">
+                    <img [src]="logoPath" [attr.alt]="store.companyName" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center">
+                <span>
+                    <i class="fa fa-lock" aria-hidden="true"></i> Compra 100% segura</span>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+                <span>
+                    <i class="fa fa-phone" aria-hidden="true"></i> CONTATO {{getStore().phone}}</span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Normal -->
+<header id="header" [ngClass]="{'hide': isCheckout()}">
+    <nav class="nav-top navbar navbar-default hidden-xs hidden-sm">
+        <div class="container-fluid">
+            <div class="pull-left">
+                <div class="pull-left">
+                    <div class="information-nav">
+                        <ul class="list-inline">
+                            <li>
+                                <span class="phone">CONTATO
+                                    <b>{{getStore().phone}}</b>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook circular"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+5516988609894">
+                                    <i class="fa fa-whatsapp circular"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram circular"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-right">
+                <div class="information-nav">
+                    <ul class="list-inline">
+                        <li>
+                            <i class="fa fa-user"></i>
+                            <a [routerLink]="['/conta/home']" title="Minha Conta">Minha Conta</a> |
+                        </li>
+                        <li>
+                            <i class="fa fa-list-ul"></i>
+                            <a [routerLink]="['/conta/pedidos']" title="Meus Pedidos">Meus Pedidos</a> |
+                        </li>
+                        <li>
+                            <i class="fa fa-file-text-o"></i>
+                            <a [routerLink]="['/cadastrar']" title="Cadastre-se">Cadastre-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="header-bar hidden-xs hidden-sm">
+        <div class="container-fluid">
+
+            <div class="col-brand ">
+                <h1 id="brand">
+                    <a [routerLink]="['/']" [attr.title]="getStore().companyName">
+                        <b class="sr-only">{{getStore().companyName}}</b>
+                        <img [src]="logoPath" [attr.alt]="store.companyName" class="img-responsive">
+                    </a>
+                </h1>
+            </div>
+            <div class="col-search overflow-hidden">
+                <form id="form-search" action="/buscar" method="get" (submit)="searchFor($event)">
+                    <fieldset>
+                        <input id="auto-complete" type="text" placeholder="Digite aqui o nome, código ou a marca do produto" name="q" [(ngModel)]="q"
+                            autocomplete="off" required>
+                        <button class="button button-search" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-mini-cart pull-right ">
+                <app-mini-cart [store]="getStore()"></app-mini-cart>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- Menu -->
+<nav class="navbar categories-nav navbar-static-top" [ngClass]="{'hide': isCheckout()}">
+    <div class="container">
+
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-md hidden-lg" [routerLink]="['/']" [attr.title]="getStore().companyName">
+                <img [attr.src]="mediaPath + '/store/' + getStore().logo" [attr.alt]="getStore().companyName" class="img-responsive" style="padding: 0">
+            </a>
+            <span class="mobile-btns pull-right hidden-md hidden-lg">
+                <button id="btn-search" class="btn btn-search">
+                    <img src="assets/images/icon-search.svg" alt="Buscar" />
+                </button>
+                <a class="btn btn-my-cart" [routerLink]="['/carrinho']">
+                    <img src="assets/images/icon-cart.svg" alt="Meu Carrinho" />
+                </a>
+                <div id="search-box" style="display: none;">
+                    <div class="mask"></div>
+                    <form id="form-search-mobile" action="/buscar" method="get" (submit)="searchFor($event)">
+                        <fieldset class="clearfix">
+                            <button (click)="searchFor($event)" type="submit" class="btn btn-search pull-right">
+                                <img src="assets/images/icon-search.svg" alt="Buscar" />
+                            </button>
+                            <button class="btn-close pull-left">
+                                <img src="assets/images/icon-close.svg" alt="Fechar" />
+                            </button>
+                            <div class="overflow-hidden">
+                                <input id="auto-complete-mobile" type="text" placeholder="O que você procura?" name="q" [(ngModel)]="q" autocomplete="off">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </span>
+        </div>
+        <app-category-menu [store]="getStore()" [isLoggedIn]="isLoggedIn()" id="navbar" class="navbar-collapse collapse"></app-category-menu>
+    </div>
+</nav>
+<!-- Conteúdo -->
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
+<!-- Footer -->
+<footer id="footer" *ngIf="getStore()">
+
+    <!-- Main Footer -->
+    <div *ngIf="!isCheckout()" id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="list-footer col-xs-12 col-md-3 footer-institutional">
+                    <img src="/assets/images/logo-large.png" alt="Procura Peças" />
+                </div>
+                <div class="list-footer col-xs-12 col-md-2 footer-institutional">
+                    <h3 class="title">Ajuda</h3>
+                    <ul>
+                        <li *ngFor="let institutional of institutionals">
+                            <a [routerLink]="[getInstitutionalUrl(institutional)]" [attr.title]="institutional.title">{{institutional.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 visible-xs visible-sm hidden-md hidden-lg">
+                    <hr>
+                </div>
+                <div class="list-footer col-xs-12 col-md-3 footer-call-center">
+                    <h3 class="title">Institucional</h3>
+                    <ul>
+                        <li>
+                            <span>Televendas
+                                <br>
+                                <b class="phone footer-phone">{{getStore().phone}}</b>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-footer col-xs-12 col-md-3 footer-social-networks">
+                    <h3 class="title">Formas de Pagamento</h3>
+                    <img src="/assets/images/bandeiras-pagamento.jpg" alt="Cartões e Bandeiras" />
+                    <a href="#">
+                        <i class="fa fa-facebook-official "></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Footer -->
+    <!-- /Footer secundário -->
+    <div id="copyright" class="copyright">
+        <div class="container footer">
+            <div class="items-copyright">
+                <div class="signature clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <p>© {{ date | date:'y'}}
+                            <a href="https://agenciahoop.com.br/" title="Hoop" target="_blank">
+                                <img src="/assets/images/logo-branco.png" alt="Hoop" />
+                            </a>
+                            . All rights reserved. Tecnologia:
+                            <a href="http://www.idealeware.com.br" title="Idealeware" target="_blank">
+                                <img src="/assets/images/signature.png" alt="Idealeware" />
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="text-align: right;">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook-official "></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram circular-blue"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Conteúdo do rodapé -->
+<app-popup *ngIf="!isCheckout()" [store]="getStore()"></app-popup>

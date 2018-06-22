@@ -1,0 +1,121 @@
+
+#filter {
+
+
+  /*left: 0;
+  right: 0;
+  bottom: 0;*/
+  background: #FAFAFA;
+
+}
+
+#filter .filter-header {
+  padding: 0 15px;
+}
+
+#filter .filter-header .btn-close {
+  width: 30px;
+  height: 30px;
+  border: 0 none;
+  background: transparent;
+  border-radius: 0;
+}
+
+#filter .filter-header .btn-clear-all {
+  font-size: 12px;
+  color: #999999;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#filter .filter-header b {
+  font-size: 13px;
+  color: $link-primary-color;
+  line-height: 12px;
+  display: block;
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+#filter .filter-header b img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+#filter .filter-header h4 {
+  font-size: 18px;
+  color: $link-primary-color;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 30px 0 5px;
+}
+
+#filter ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#filter ul .lvl1-item {
+  padding: 5px 0;
+}
+
+#filter ul .lvl1-link {
+  min-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  color: $link-primary-color;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding: 0 15px;
+}
+
+#filter ul .lvl1-link .selected {
+  display: block;
+  font-size: 11px;
+  color: #999999;
+  font-weight: 15px;
+}
+
+#filter ul .lvl1-link .fa {
+  color: #999999;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+#filter .lvl1 {
+  padding-top: 30px;
+}
+
+#filter .lvl2 {
+  display: none;
+  background: #FAFAFA;
+  z-index: 99;
+}
+
+#filter .lvl2 .lvl2-item label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+#filter .lvl2 .lvl2-item label input {
+  width: 12px;
+  height: 12px;
+  margin: 4px 4px 4px 0;
+}

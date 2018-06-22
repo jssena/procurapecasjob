@@ -1,0 +1,10 @@
+<div class="showcase showcase-owl destaque ">
+    <!-- <h3 class="title">
+        <b>{{group.name}}</b>
+    </h3>  [ngClass]="{'owl-carousel owl-theme': products.length > 1}"-->
+    <div [attr.id]="'group-' + group.id" class="showcase-items list-style-none" *ngIf="products" >
+        <div class="showcase-item" *ngFor="let product of products">
+            <app-product-grid-item [product]="product" [store]="store"></app-product-grid-item>
+        </div>
+    </div>
+</div>

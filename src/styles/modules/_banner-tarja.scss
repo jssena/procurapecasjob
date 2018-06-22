@@ -1,0 +1,46 @@
+
+#banner-tarja {
+  margin:0;
+  background-color: $color-accent;
+  padding: 0;
+}
+
+#banner-tarja .box {
+  background-color: $color-accent;
+}
+
+#banner-tarja ul {
+  text-align: center;
+  margin: 0 !important;
+  max-height: 74px;
+}
+
+#banner-tarja ul li {
+  display: inline-block;
+  max-height: 74px;
+  max-width: 30%;
+}
+
+#banner-tarja a {
+  text-align: center;
+  display: block;
+}
+
+
+
+#banner-tarja ul li a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+#banner-tarja ul li a .text {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+
+#banner-tarja img{
+  max-height: 74px;
+  display: block;
+}

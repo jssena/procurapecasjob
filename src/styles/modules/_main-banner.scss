@@ -1,0 +1,78 @@
+
+#main-banner img{
+  margin:0 auto;
+  object-fit: cover;
+}
+#main-banner .row{
+  margin-top: 0;
+}
+#main-banner {
+  // display: flex;
+  // flex-flow: row;
+  // align-items: stretch;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.banner-form{
+  width: 100% !important;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+  .banner-form .title{
+      width: 100%;
+      max-width: 212px;
+  }
+ 
+
+.showcase-banners{
+  width: 100%  !important;
+
+}
+
+@media (max-width: 810px) {
+  #main-banner {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .banner-form{
+    width: 100%;
+
+  }
+  .showcase-banners{
+    width: 100%;
+  }
+
+}
+#main-banner .owl-controls {
+  height: 0;
+}
+
+#main-banner .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+
+#main-banner .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#main-banner .owl-dots .owl-dot span {
+  margin: 0 1px;
+  padding: 0;
+  border-radius: 0;
+  width: 30px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#main-banner .owl-dots .owl-dot.active span {
+  height: 6px;
+  background-color: #fff;
+}
+.slick-dotted.slick-slider{
+  margin: 0 !important;
+}

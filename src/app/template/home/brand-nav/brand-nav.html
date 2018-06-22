@@ -1,0 +1,17 @@
+<!-- Carrossel Marcas -->
+<div id="list-brands" class="col-lg-12 hidden-xs">
+    <div class="fx"></div>
+    <div class="container">
+         
+        <div *ngIf="this.brands.length > 5" class="row showcase-brands">
+            <div *ngFor="let brand of brands" class="col" >
+                <a [routerLink]="[getRoute(brand)]" title="{{brand.name}}">
+                    <img [attr.src]="getPictureUrl(brand)" [attr.alt]="brand.name" class="img-responsive center-block">
+                    <!-- {{brand.name}} -->
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- /Carrossel Marcas -->

@@ -1,0 +1,16 @@
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 40;
+  transition: 300ms all;
+  cursor: pointer;
+}
+
+.mask:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

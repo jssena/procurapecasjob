@@ -1,0 +1,55 @@
+
+
+.quickview-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 40;
+}
+@media (max-width: 767px) {
+
+  .quickview-box {
+    display: none!important;
+  }
+}
+
+.quickview-box .quickview-content {
+  background: #FFFFFF;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1), 0 14px 14px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 600px;
+  max-width: 90%;
+  margin: -300px 0 0 -350px;
+  z-index: 50;
+}
+@media (min-width: 992px) {
+
+  .quickview-box .quickview-content {
+    margin-left: -450px;
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+
+  .quickview-box .quickview-content {
+    margin-left: -490px;
+    width: 980px;
+  }
+}
+
+
+.quickview-box .quickview-content .btn-close-clickview:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.quickview-box .quickview-content .quickview-row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

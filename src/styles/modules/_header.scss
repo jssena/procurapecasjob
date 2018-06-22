@@ -1,0 +1,374 @@
+#header {
+  position: relative;
+  z-index: 30;
+}
+
+#header .nav-top {
+  border: 0 none;
+  background-color: $color-accent;
+  color: $black;
+  padding: 7px 0;
+  min-height: auto;
+  border-radius: 0;
+  margin: 0;
+}
+
+#header .nav-top ul li a,
+#header .nav-top ul li,
+#header .nav-top ul {
+  margin: 0;
+  line-height: 28px;
+}
+
+#header .nav-top .phone {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $black;
+}
+
+#header .nav-top .information-nav a {
+  font-size: 14px;
+  color: $black
+}
+
+#header .nav-top .row{
+  margin-top: 0;
+}
+
+#header .nav-top-bar{
+   width: 80%;
+   float: left;
+  
+}
+
+ 
+#header .left-img{
+  position: relative;
+}
+#header .nav-top .cadastre-se{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  text-align: center;
+  margin-top: -8px;
+  float: right;
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background: $color-primary;
+}
+
+ 
+#header .nav-top .cadastre-se a{
+  color: #fff;
+}
+#header .nav-top .cadastre-se img{
+  position: relative;
+
+}
+#header .header-bar {
+  padding: 20px 0;
+}
+
+#header .header-bar #brand,
+#header .header-bar #brand h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#header .header-bar #welcome p {
+  font-size: 14px;
+  color: #999999;
+}
+
+#header .header-bar #form-search {
+  position: relative;
+  margin-top: 20px;
+}
+
+#header .header-bar #form-search input {
+  display: block;
+  border: 1px solid #7d7d7d;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 63px 0 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#header .header-bar #form-search .button {
+  background: $color-accent;
+  border: 0 none;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  top: 0;
+
+  font-size: 26px;
+  line-height: 48px;
+  height: 48px;
+  width: 60px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.circular {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #000;
+  color: $black;
+  padding: 0.5em 0.6em;
+  margin-right: 2px;
+  min-height: 25px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.circular-blue{
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px $color-primary;
+  color: $color-primary;
+  padding: 0.5em 0.6em;
+  margin-right: 2px;
+  min-height: 25px;
+  min-width: 25px;
+  text-align: center;
+}
+
+
+#header .header-bar #form-search .button:hover {
+  background-color: $color-primary;
+}
+
+#header .header-bar #mini-cart {
+  padding: 10px 0;
+}
+
+#header .header-bar #mini-cart .mini-cart {
+  position: relative;
+}
+
+#header .header-bar #mini-cart .mini-cart > a {
+  text-decoration: none;
+}
+
+#header .header-bar #mini-cart .mini-cart > a .name-cart {
+  font-size: 14px;
+  color: $black;
+  padding-left: 15px;
+}
+
+#header .header-bar #mini-cart .mini-cart > a i {
+  color: $black;
+  font-size: 29px;
+}
+//novo 
+#header .header-bar #mini-cart .mini-cart .carrinho{
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+#header .header-bar #mini-cart .mini-cart > a .badge-success {
+  background-color: $color-primary;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFF;
+  position: absolute;
+  left: 21px;
+  top: -6px;
+  border: 2px solid #FFF;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart {
+  visibility: hidden;
+  margin-top: 80px;
+  opacity: 0;
+  height: 0;
+  transition: 300ms all;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #FAFAFA;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2), 0 14px 14px 0 rgba(0, 0, 0, 0.2);
+  width: 330px;
+  z-index: 999;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+  z-index: 999;
+  background: transparent;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items {
+  padding: 10px 15px;
+  margin: 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item {
+  border-top: 1px solid #D9D9D9;
+  padding: 10px 0;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item:first-child {
+  border-top: 0 none;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions {
+  margin-left: 10px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .btn-remove {
+  border: 0 none;
+  background: transparent;
+  display: block;
+  width: 45px;
+  height: 25px;
+  margin-bottom: 5px;
+  color: $black;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .btn-remove:hover {
+  color: #D0011B;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty {
+  display: block;
+  position: relative;
+  max-width: 45px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty input {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  font-size: 12px;
+  color: $black;
+  height: 25px;
+  width: 45px;
+  text-align: center;
+  padding: 0 0px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty .btn-update {
+  border: 0 none;
+  background-color: transparent;
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 400;
+  padding: 0;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty .btn-update.btn-update-del {
+  left: 0;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty .btn-update.btn-update-add {
+  right: 0;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .actions .update-qty .btn-update:hover {
+  color: $btn-success-background-color;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .thumb {
+  padding-right: 10px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .details a {
+  text-decoration: none;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .details a b {
+  font-size: 12px;
+  color: $black;
+  line-height: 14px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .details a strong {
+  display: block;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .details a strong .old-price {
+  font-size: 11px;
+  color: #999999;
+  line-height: 15px;
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-items .header-cart-item .details a strong .regular-price {
+  font-size: 13px;
+  color: #000000;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-footer {
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  padding: 10px 25px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-footer .header-cart-subtotal {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-footer .header-cart-subtotal strong {
+  font-size: 14px;
+  color: #231F20;
+  line-height: 16px;
+  display: block;
+}
+
+#header .header-bar #mini-cart .mini-cart #header-cart .header-cart-footer .btn-actions .btn {
+  margin: 10px 0;
+}
+
+#header .header-bar #mini-cart .mini-cart:hover #header-cart {
+  visibility: visible;
+  margin-top: 10px;
+  opacity: 1;
+  height: auto;
+}
+
+//novo
+.ajuda,.minha-conta,.meus-pedidos{
+  width: 40px;
+}
+.ajuda{
+  height: 50px;
+}
+  .meus-pedidos:hover path,.minha-conta:hover path,.ajuda:hover path{
+      fill:$blue;
+  }
+
+#header .list-inline li{
+  text-align: center;
+}

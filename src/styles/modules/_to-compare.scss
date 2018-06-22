@@ -1,0 +1,52 @@
+
+/*
+    COMPARAR
+*/
+
+#to-compare {
+  background: #FAFAFA;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12), 0px 14px 14px 0px rgba(0, 0, 0, 0.14);
+  text-align: center;
+  padding: 25px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#to-compare .box-compare {
+  height: 40px;
+  background: $link-primary-color;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+}
+
+#to-compare .box-compare .btn-compare {
+  background: none;
+  box-shadow: 0 0 0 transparent;
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  line-height: 40px;
+}
+
+#to-compare .box-compare .quanty {
+  width: 60px;
+  color: #FFF;
+  display: block;
+  margin: 6px 0;
+  border-left: 1px solid #999999;
+  height: 28px;
+  line-height: 30px;
+}
+
+#to-compare .text-alert {
+  text-align: left;
+  color: #999999;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 5px 0px;
+}

@@ -1,0 +1,72 @@
+#copyright{
+  background: $footer-color;
+
+}
+
+#copyright .items-copyright {
+  border-top: 0px solid #F3F3F3;
+  padding: 0px 0px 20px 0px;
+}
+
+#copyright .footer-call-center img{
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #copyright .items-copyright {
+    padding: 30px 30px 20px 30px;
+  }
+}
+@media (min-width: 1600px) {
+  #copyright .items-copyright {
+    padding: 30px 0px 20px 0px;
+  }
+}
+#copyright .items-copyright p, #copyright .items-copyright .signature {
+  font-size: 13px;
+  color: $color-primary;
+  line-height: 20px;
+}
+
+#copyright .footer-social-networks a{
+	font-size: 2.5vw;
+  margin-left: 10px;
+	color: #fff;
+}
+#copyright .footer-social-networks img{
+	width: 100%;
+  max-width:277px;
+}
+#copyright .items-copyright .signature a {
+  margin-left: 0px;
+}
+#copyright .list-inline{
+  margin-top: 30px;
+}
+  #copyright .list-inline > li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+#copyright .ico-google{
+  margin-top: 12px;
+}
+@media (min-width: 320px) and (max-width:375px) {
+  #copyright .footer-social-networks a{
+    font-size: 40px;
+    color: #fff;
+    margin-right: 20px;
+  }
+#copyright .items-copyright {
+    border-top: 0px solid #F3F3F3;
+    padding: 0px 20px 20px 20px;
+}
+
+  .televendas{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .whats{
+    width: 100%;
+  }
+}

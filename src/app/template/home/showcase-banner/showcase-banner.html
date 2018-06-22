@@ -1,0 +1,23 @@
+<div id="main-banner" class="container-fluid">
+    
+  
+ <div class="row">
+    <div class="showcase-banners list-style-none col-md-12 col-sm-12 main-banner-section">
+        <div *ngFor="let banner of banners">
+            <a *ngIf="banner.url" [attr.href]="banner.url" target="_blank">
+                <img [attr.src]="getBannerUrl(banner)" [attr.alt]="banner.name" class="img-responsive" />
+            </a>
+            <span *ngIf="!banner.url">
+                <img [attr.src]="getBannerUrl(banner)" [attr.alt]="banner.name" class="img-responsive" />
+            </span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 banner-form main-banner-section">
+            <app-search-vehicle></app-search-vehicle>
+            <div class="clear"></div>
+    </div>
+</div>    
+
+</div>

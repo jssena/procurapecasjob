@@ -1,0 +1,32 @@
+
+.owl-carousel .owl-nav > div {
+  height: 30px !important;
+  background: transparent !important;
+  border: 0 none;
+  border-radius: 0;
+  text-align: center;
+  line-height: 30px !important;
+  padding: 0;
+  margin: -18px 0 0 !important;
+  font-size: 50px !important;
+  color: $color-primary !important;
+  transition: 300ms all !important;
+
+}
+
+.owl-carousel div.owl-prev {
+  float: left;
+}
+
+.owl-carousel .owl-nav{
+  margin: -25px;
+}
+
+.owl-carousel div.owl-next {
+  float: right;
+}
+
+.owl-carousel .owl-nav > div:hover {
+  background: transparent !important;
+  color: $link-hover-primary-color !important;
+}

@@ -1,0 +1,14 @@
+<ul class="category-grid col-md-12 col-sm-12">
+    <h3 class="title" style="margin-bottom: 30px; color:#243e7e;">
+        <b>Categorias</b>
+    </h3>
+    <li class="col-md-4 col-sm-12 category-item-wrapper" *ngFor="let category of categories | slice:0:6" style="margin-bottom:30px;">
+        <div class="category-grid-item " [routerLink]="[getRoute(category)]">
+            <div class="category-grid-item-inner">
+                <p class="category-grid-title">
+                    {{category.name}}
+                </p>
+            </div>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,29 @@
+
+
+
+.bread-crumb {
+  padding: 30px 0;
+}
+
+.bread-crumb .breadcrumb {
+  padding: 0;
+  margin: 0;
+}
+
+
+.bread-crumb .breadcrumb li.active {
+  font-size: 14px;
+  color: $color-primary;
+  font-weight: 400;
+}
+
+.bread-crumb .breadcrumb li a {
+  font-size: 14px;
+  color: $color-primary;
+  font-weight: 400;
+}
+
+.bread-crumb .breadcrumb li a:hover {
+  color: #737373;
+}
+
